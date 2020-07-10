@@ -3,9 +3,75 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+
     <title>Credit Card Form</title>
 </head>
 <body>
-    
+    <form>
+        <div class="form-group">
+          <label for="exampleInputEmail1">Card Number</label>
+          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+          <!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
+        </div>
+        <div class="form-group">
+          <label for="exampleInputPassword1">Name on Card</label>
+          <input type="password" class="form-control" id="exampleInputPassword1">
+        </div>
+        <div class="form-group">
+            <label for="exampleInputPassword1">Month</label>
+            <br>
+            <div class="row">
+                <div class="col-sm-4">
+                    <select class="DOB">
+                        <option> Month </option>
+                        <option value="1">January</option>
+                        <option value="1">February</option>
+                        <option value="1">March</option>
+                        <option value="1">April</option>
+                        <option value="1">May</option>
+                        <option value="1">June</option>
+                        <option value="1">July</option>
+                        <option value="1">August</option>
+                        <option value="1">September</option>
+                        <option value="1">October</option>
+                        <option value="1">November</option>
+                        <option value="1">December</option>
+                    </select>
+                </div>
+                <div class="col-sm-4">
+                    <select class="DOB">
+                        <option> Year </option>
+                        <option value="1">2020</option>
+                        <option value="1">2021</option>
+                        <option value="1">2022</option>
+                        <option value="1">2023</option>
+                        <option value="1">2024</option>
+                        <option value="1">2025</option>
+                        <option value="1">2026</option>
+                        <option value="1">2027</option>
+                        <option value="1">2028</option>
+                        <option value="1">2029</option>
+                        <option value="1">2030</option>
+                        <option value="1">2031</option>
+                    </select>
+                </div>
+                <div class="col-sm-4">
+                    <label for="exampleInputPassword1">Day</label>
+            <input class="exp-day">
+                </div>
+            </div>
+        
+          </div>
+        <div class="form-group form-check">
+          <input type="checkbox" class="form-check-input" id="exampleCheck1">
+          <label class="form-check-label" for="exampleCheck1">Check me out</label>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
 </body>
 </html>
