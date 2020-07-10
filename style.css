@@ -20,9 +20,14 @@ select {
     width: 130px;
 }
 .card-img {
-    position: relative;
-    margin-top: -60%;
+    position: absolute;
+    margin-top: -25%;
     padding-bottom: 2%;
-    width: 445px;
+    width: 41.5%;
     border-radius: 20px;
+}
+.img-input {
+    width: 100%;
+    position: relative;
+    margin-top: 8%;
 }
