@@ -21,9 +21,9 @@ select {
 }
 .card-img {
     position: absolute;
-    margin-top: -25%;
+    margin-top: -19%;
     padding-bottom: 2%;
-    width: 41.5%;
+    width: 32%;
     border-radius: 20px;
 }
 .img-input {

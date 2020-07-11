@@ -6,11 +6,11 @@
 var MyNumber = document.getElementById("card-number").value;
 $(document).ready(function(){
     $("input").keydown(function(){
-      $("input").css("background-color", "yellow");
-      $("#img-input").html(MyNumber);
+    //   $("input").css("background-color", "yellow");
+      $("#img-input").append(MyNumber);
       console.log(MyNumber);
     });
     $("input").keyup(function(){
-      $("input").css("background-color", "pink");
+    //   $("input").css("background-color", "pink");
     });
   });
