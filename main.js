@@ -1,32 +1,30 @@
-document.onkeyup = function(event) {
+function AddNumber() {
 
-  const CardNumber = event.key;
-  let MaxLength = 16;
-  var max = parseInt($(this).attr('max'));
-  var min = parseInt($(this).attr('min'));
+  document.onkeyup = function(event) {
 
-    if (CardNumber <= MaxLength) {
-      $("#img-input").append(CardNumber);
-      this.value = this.value.replace(/[^0-9\.]/g,'');
-      // document.getElementById("img-input").append(CardNumber);
-    }
-    else if (CardNumber > MaxLength){
-      alert("Too Many Numbers!")
-    }
+    let CardNumber = event.key;
     
-    prevetnDefault();
+  
+        $("#img-input").append(CardNumber);
+        this.value = this.value.replace(/[^0-9\.]/g,'');
+     
+      
+      prevetnDefault();
+      
+    
+  }
+  
+}
+ // Name
+function AddName() {
+  document.onkeyup = function(event) {
+    let CardName = event.key;
+
+    $("#img-name").append(CardName);
+        // this.value = this.value.replace(/[^0-9\.]/g,'');
+  }
   
 }
 
-document.onkeyup = function(event) {
-
-  const CardName = event.key;
-  
-      $("#card-name").append(CardNumber);
-      this.value = this.value.replace(/[^a-z\.]/g,'');
-      // document.getElementById("card-name").append(CardName);
-    
-    
-    prevetnDefault();
-  
-}
+AddName();
+AddNumber();
