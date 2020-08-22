@@ -12,7 +12,7 @@ function AddNumber() {
       prevetnDefault();
       
     
-  }
+  } 
   
 }
  // Name
@@ -21,7 +21,7 @@ function AddName() {
     let CardName = event.key;
 
     $("#img-name").append(CardName);
-        // this.value = this.value.replace(/[^0-9\.]/g,'');
+        this.value = this.value.replace(/[^0-9\.]/g,'');
   }
   
 }
